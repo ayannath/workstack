@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Workstack - online project management tool</title>
+    <meta name="description"
+        content="Plan Projects · Team Calendar · Task Lists · Gantt Charts · Track Time · 14 Day Free Trial">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="Workstack, project management, task management, task scheduling, team calendar, Basecamp alternative, Asana alternative">
+    <meta name="author" content="Workstack">
+    <!-- Pinterest verification -->
+    <meta name="p:domain_verify" content="1c699d9714f892484d7a1e9c688d6338" />
+
+    <!-- Standard iPhone -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone-114.png" />
+    <!-- Retina iPhone -->
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-114.png" />
+    <!-- Standard iPad -->
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad-144.png" />
+    <!-- Retina iPad -->
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-144.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/MyFontsWebfontsKit.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-slider.css">
+    <link rel="stylesheet" href="css/ws.css">
+    <link rel="icon" type="image/png" href="img/ws-icon.png">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+
+<body id="ws-body">
+    <div class="wrapper clearfix">
+
+        <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <div class="cover">
+            <div class="loader"></div>
+            <div class="cover-logo"></div>
+        </div>
+
+
+        <header>
+            <div class="mobile-nav-bg"></div>
+            <img src="img/nav-icon.svg" class="nav-icon" alt="Menu">
+            <div class="logo-container">
+                <a href=""><img src="img/workstack-logo.svg" class="logo" alt="Workstack"></a>
+            </div>
+            <div class="nav-container">
+                <ul class="nav-top">
+                    <li class="active"><a href="" class="nav-link">Home</a></li>
+                    <li><a href="features" class="nav-link">Features</a></li>
+                    <li><a href="pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="contact" class="nav-link">Contact</a></li>
+                    <li><a href="https://app.workstack.io/login" class="nav-link btn-outline">Login</a></li>
+                    <li><a href="https://app.workstack.io/register"
+                            class="nav-link btn-outline btn-highlight">Register</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="popup-bg-container">
+            <div class="popup-video-container">
+                <div class="popup-video">
+                    <div class="popup-embed-container">
+                        <div class="popup-close"><img src="img/icon-close.svg" class="popup-close-btn" alt="close">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="freeSubModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-container">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            <img src="img/one-year-free-workstack-subscription.jpg" class="offer-img"
+                                alt="Get one year free subscription to Workstack">
+                        </div>
+                        <div class="modal-footer">
+                            <!--<p>Every month we are giving away <span class="highlight">a free annual subscription</span> to one lucky Twitter follower. <span class="highlight">Just follow us on Twitter</span> to be in with a chance.</p>-->
+                            <div class="modal-btns">
+                                <a href="https://twitter.com/workstack" target="_blank" class="btn btn-twitter"><span
+                                        class="icon-twitter"></span><span>Follow Us</span></a>
+                                <button type="button" class="btn btn-modal-close" data-dismiss="modal"
+                                    href="javascript:void(0);" onclick="removePromo();"><span>Close</span></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="page-container">
+
+            <div class="page-content">
+
+
+                <!-- A/B Test 1 - Title: Start -->
+                <div id="ABTest1">
+                    <div class="page-title">
+                        <h1 class="large-heading anim1">Team planning <br class="mobile-only">made easy</h1>
+                        <h3 class="no-bottom-margin anim2">Plan projects, track time and schedule your team's tasks</h3>
+                        <a href="https://app.workstack.io/register" class="btn-trial anim3">Start 14 day free trial</a>
+                    </div>
+                </div>
+                <!-- A/B Test 1: End -->
+                <div class="timeline">
+                    <!-- A/B Test 2: Start -->
+                    <div id="ABTest2" class="screenshot-container">
+                        <div class="screenshot-container-inner">
+                            <div class="screenshot">
+                                <div class="video-container">
+                                    <a href="https://www.youtube.com/embed/N0uCMHi1Mps?rel=0&controls=0&showinfo=0&autoplay=1"
+                                        target="videoPlayer" class="play-link"></a>
+                                    <img src="img/screen.png" class="video-cover">
+                                    <div class="screen-cover"></div>
+                                    <div id="player" class="autoplay"></div>
+                                </div>
+                                <div class="screenshot-keyboard">
+                                    <div class="screenshot-groove"></div>
+                                </div>
+                                <div class="screenshot-keyboard-base"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A/B Test 2: End -->
+                    <h2 class="subheader">All the tools you need</h2>
+                    <h5>to make your projects a success</h5>
+                    <div class="row features">
+                        <div class="col-md-6">
+                            <div class="col-sm-6">
+                                <div class="feature">
+                                    <div class="feature-icon-container">
+                                        <svg version="1.1" class="feature-icon" id="icon-team-view"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+                                            <circle fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                cx="25.266" cy="21.426" r="12.093" />
+                                            <g>
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-miterlimit="10"
+                                                    d="M42.189,43.222
+		c-3.943-5.677-10.352-9.371-17.591-9.371c-11.985,0-19.701,10.124-19.701,22.612c0,0.083,0.002,0.166,0.003,0.248h30.965" />
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-miterlimit="10" d="M42.189,43.222c2.585,3.722,4.11,8.296,4.11,13.242
+		c0,0.083-0.002,0.166-0.003,0.248H35.864" />
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-miterlimit="10" d="M42.189,43.222c2.703-2.15,6.079-3.429,9.742-3.429
+		C60.806,39.793,66,47.289,66,56.537c0,0.062-0.002,0.123-0.002,0.184H35.864" />
+                                            </g>
+                                            <circle fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                cx="51.686" cy="30.703" r="8.954" />
+                                        </svg>
+
+                                    </div>
+                                    <h4>Team<br>
+                                        Calendar</h4>
+                                    <hr class="feature-line">
+                                    <p class="feature-desc">
+                                        See who's doing what and when they are doing it.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature">
+                                    <div class="feature-icon-container">
+                                        <svg version="1.1" class="feature-icon" id="icon-task-list"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px"
+                                            height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70"
+                                            xml:space="preserve">
+                                            <path fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                d="M52.703,17.607
+            c-3.099-1.438-7.286-2.485-12.049-2.941v-2.657c0-3.597-2.536-6.51-5.661-6.51c-3.127,0-5.663,2.914-5.663,6.51v2.74
+            c-4.841,0.531-9.053,1.67-12.049,3.216" />
+                                            <path fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                d="M58.253,18.891h-3.131v7.331H14.64v-7.331
+            h-2.892c-1.596,0-2.892,1.294-2.892,2.892v38.655c0,1.6,1.296,2.896,2.892,2.896h46.505c1.6,0,2.891-1.296,2.891-2.896V21.783
+            C61.144,20.185,59.853,18.891,58.253,18.891z" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="16.167" y1="36.417" x2="43.333" y2="36.417" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="16.167" y1="44.833" x2="43.333" y2="44.833" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="16.167" y1="53.25" x2="43.333" y2="53.25" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="47" y1="36.417" x2="53.25" y2="36.417" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="47" y1="44.833" x2="53.25" y2="44.833" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="47" y1="53.25" x2="53.25" y2="53.25" />
+                                        </svg>
+                                    </div>
+                                    <h4>Task<br>
+                                        Lists</h4>
+                                    <hr class="feature-line">
+                                    <p class="feature-desc">
+                                        Setup project task lists and set due dates
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-sm-6">
+                                <div class="feature">
+                                    <div class="feature-icon-container">
+                                        <!--
+                            <svg version="1.1" class="feature-icon" id="icon-estimate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="70px" height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+        <g>
+            <circle fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10" cx="35" cy="35.002" r="27.167"/>
+            <polyline fill="none" stroke="#dc73f2" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="34.875,21.75
+                34.875,36.75 45.375,43.875 	"/>
+        </g>
+        </svg>
+                   -->
+                                        <svg version="1.1" class="feature-icon" id="icon-estimate"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+                                            <g>
+
+                                                <ellipse fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-miterlimit="10" cx="35" cy="35.001" rx="27.167"
+                                                    ry="27.165" />
+                                            </g>
+                                            <path fill="none" stroke="#dc73f2" stroke-width="2" stroke-linecap="round"
+                                                stroke-miterlimit="10" d="M41.583,23.542
+	c0,0-1.417-2.417-6.5-2.417s-7.583,2.583-7.5,5.667c0.081,2.999,1.25,4,8.083,7.75s7.25,5.5,7.25,8.333s-2.083,6-7.583,6
+	s-8.25-3.333-8.25-3.333" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-linecap="round"
+                                                stroke-miterlimit="10" x1="35" y1="17.805" x2="35" y2="52.195" />
+                                        </svg>
+                                    </div>
+                                    <h4>Set Project<br>
+                                        Budgets</h4>
+                                    <hr class="feature-line">
+                                    <p class="feature-desc">
+                                        Track the spend across your projects and your team
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature">
+                                    <div class="feature-icon-container">
+                                        <svg version="1.1" class="feature-icon" id="icon-calendar"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px"
+                                            height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70"
+                                            xml:space="preserve">
+                                            <g>
+                                                <line fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-miterlimit="10" x1="28.502" y1="13.291" x2="41.078"
+                                                    y2="13.291" />
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-miterlimit="10" d="M18.104,13.291h-4.519
+                c-1.601,0-2.899,1.298-2.899,2.899v43.745c0,1.602,1.298,2.899,2.899,2.899h42.078c1.602,0,2.898-1.298,2.898-2.899V16.189
+                c0-1.601-1.297-2.899-2.898-2.899h-4.186" />
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10"
+                                                    d="M18.104,13.291
+                c-0.566,0.926-0.899,2.01-0.899,3.175c0,3.368,2.73,6.098,6.098,6.098s6.098-2.73,6.098-6.098c0-1.165-0.333-2.249-0.899-3.175" />
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10"
+                                                    d="M41.078,13.291
+                c-0.567,0.926-0.899,2.01-0.899,3.175c0,3.368,2.73,6.098,6.099,6.098s6.099-2.73,6.099-6.098c0-1.165-0.332-2.249-0.899-3.175" />
+                                            </g>
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-linecap="round"
+                                                stroke-miterlimit="10" x1="23.387" y1="7.357" x2="23.387" y2="16.716" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-linecap="round"
+                                                stroke-miterlimit="10" x1="46.36" y1="7.357" x2="46.36" y2="16.716" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="10.333" y1="30.667" x2="58.667" y2="30.667" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="10.333" y1="41.168" x2="58.667" y2="41.168" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="10.333" y1="51.668" x2="58.667" y2="51.668" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="22.667" y1="30.667" x2="22.667" y2="62" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="34.5" y1="30.667" x2="34.5" y2="62" />
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-miterlimit="10"
+                                                x1="46.167" y1="30.667" x2="46.167" y2="62" />
+                                            <line fill="none" stroke="#dc73f2" stroke-miterlimit="10" x1="35"
+                                                y1="50.125" x2="44.75" y2="40.375" />
+                                            <line fill="none" stroke="#dc73f2" stroke-miterlimit="10" x1="36.5"
+                                                y1="52.125" x2="46.25" y2="42.375" />
+                                            <line fill="none" stroke="#dc73f2" stroke-miterlimit="10" x1="34.25"
+                                                y1="47.25" x2="40.25" y2="41.25" />
+                                            <line fill="none" stroke="#dc73f2" stroke-miterlimit="10" x1="40.312"
+                                                y1="52.062" x2="46.312" y2="46.062" />
+                                        </svg>
+                                    </div>
+                                    <h4>Meetings &<br>
+                                        Vacations</h4>
+                                    <hr class="feature-line">
+                                    <p class="feature-desc">
+                                        Schedule meetings and block out staff downtime
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row features">
+                        <div class="col-md-6">
+                            <div class="col-sm-6">
+                                <div class="feature">
+                                    <div class="feature-icon-container">
+                                        <svg version="1.1" class="feature-icon" id="icon-time-tracking"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px"
+                                            height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70"
+                                            xml:space="preserve">
+                                            <g>
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10" d="M21.432,16.603
+                c2.873-1.746,6.109-2.953,9.568-3.484" />
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10" d="M13.013,24.802
+                c2.15-3.328,5.029-6.14,8.418-8.199" />
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10" d="M39.25,13.164
+                c-1.384-0.227-2.803-0.349-4.25-0.349c-1.36,0-2.695,0.104-4,0.304" />
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10" d="M13.013,24.802
+                c-2.641,4.086-4.18,8.951-4.18,14.18c0,14.449,11.716,26.162,26.167,26.162s26.167-11.713,26.167-26.162
+                c0-13.006-9.487-23.789-21.917-25.819" />
+                                                <polyline fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10" points="34.879,26.218
+                34.879,40.666 44.993,47.529 	" />
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10" d="M13.013,24.802
+                l-3.621-3.621c-0.39-0.391-0.39-1.024,0-1.415l6.895-6.895c0.391-0.39,1.023-0.39,1.414,0l3.73,3.731" />
+                                                <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10" d="M39.25,8.855h5.375
+                c0.553,0,1-0.448,1-1v-2c0-0.553-0.447-1-1-1H25.75c-0.553,0-1,0.447-1,1v2c0,0.552,0.447,1,1,1H31" />
+
+                                                <line fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10" x1="39.25" y1="13.164"
+                                                    x2="39.25" y2="8.855" />
+
+                                                <line fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-linecap="round" stroke-miterlimit="10" x1="31" y1="8.855"
+                                                    x2="31" y2="13.119" />
+                                            </g>
+                                            <line fill="none" stroke="#dc73f2" stroke-width="2" stroke-linecap="round"
+                                                stroke-miterlimit="10" x1="25.875" y1="8.75" x2="44.75" y2="8.75" />
+                                        </svg>
+                                    </div>
+                                    <h4>Time<br>
+                                        Tracking</h4>
+                                    <hr class="feature-line">
+                                    <p class="feature-desc">
+                                        Keep track of the time spent on each task.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature">
+                                    <div class="feature-icon-container">
+                                        <svg version="1.1" class="feature-icon" id="icon-project-plans"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px"
+                                            height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70"
+                                            xml:space="preserve">
+                                            <g>
+                                                <rect x="6.493" y="9.125" fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-miterlimit="10" width="19.958" height="13.213" />
+
+                                                <rect x="13.409" y="28.394" fill="none" stroke="#dc73f2"
+                                                    stroke-width="2" stroke-miterlimit="10" width="37.023"
+                                                    height="13.213" />
+
+                                                <rect x="37.355" y="47.662" fill="none" stroke="#dc73f2"
+                                                    stroke-width="2" stroke-miterlimit="10" width="26.151"
+                                                    height="13.213" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <h4>Project<br>
+                                        Plans</h4>
+                                    <hr class="feature-line">
+                                    <p class="feature-desc">
+                                        Plan and check progress across all your projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-sm-6">
+                                <div class="feature">
+                                    <div class="feature-icon-container">
+                                        <svg version="1.1" class="feature-icon" id="icon-reports"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px"
+                                            height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70"
+                                            xml:space="preserve">
+                                            <g>
+                                                <rect x="8.504" y="41.146" fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-miterlimit="10" width="13.53" height="20.436" />
+
+                                                <rect x="28.235" y="23.671" fill="none" stroke="#dc73f2"
+                                                    stroke-width="2" stroke-miterlimit="10" width="13.529"
+                                                    height="37.911" />
+
+                                                <rect x="47.967" y="8.416" fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-miterlimit="10" width="13.529" height="53.168" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <h4>Project<br>
+                                        Reports</h4>
+                                    <hr class="feature-line">
+                                    <p class="feature-desc">
+                                        View your worked hours for both projects and people.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature">
+                                    <div class="feature-icon-container">
+                                        <svg version="1.1" class="feature-icon" id="icon-integrations"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px"
+                                            height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70"
+                                            xml:space="preserve">
+                                            <g>
+                                                <g id="Plug_1_">
+                                                    <path fill="none" stroke="#dc73f2" stroke-width="2"
+                                                        stroke-miterlimit="10" d="M40.303,62.137l1.619-4.945
+                    c7.107-1.59,12.359-7.15,12.359-13.766v-17.52h-5.408V10.813c0-1.63-1.535-2.95-3.428-2.95s-3.426,1.32-3.426,2.95v15.093H28.308
+                    V10.813c0-1.63-1.536-2.95-3.429-2.95c-1.892,0-3.428,1.32-3.428,2.95v15.093h-5.732v17.52c0,6.684,5.361,12.29,12.582,13.812
+                    l1.292,4.898H40.303z" />
+                                                </g>
+                                                <line fill="none" stroke="#dc73f2" stroke-width="2"
+                                                    stroke-miterlimit="10" x1="48.875" y1="25.875" x2="21.25"
+                                                    y2="25.875" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <h4>3rd Party<br>
+                                        Integrations</h4>
+                                    <hr class="feature-line">
+                                    <p class="feature-desc">
+                                        Make Workstack work with other applications.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <div class="clients">
+                <div class="clients-outer">
+                    <div class="clients-img" data-stellar-ratio="0.7"></div>
+                    <div class="clients-inner">
+                        <h2 class="anim-block lc">Try it free for 14 days</h2>
+                        <h3 class="anim-block no-bottom-margin">Easy setup <span class="dot">&#8226;</span> full version
+                            <span class="dot">&#8226;</span> cancel at anytime</h3>
+                        <a href="https://app.workstack.io/register" class="btn-trial anim-block">Start 14 day free
+                            trial</a>
+                    </div>
+                </div>
+            </div>
+            <footer class="cf">
+                <ul class="nav-footer">
+                    <li class="not-mobile"><a href="features" class="nav-link">Features</a></li>
+                    <li class="not-mobile"><a href="pricing" class="nav-link">Pricing</a></li>
+                    <li><a class="nav-link" href="https://intercom.help/workstackio" target="_blank">Support</a></li>
+                    <li><a class="nav-link" href="http://app.workstack.io/developers" target="_blank">API</a></li>
+                    <li class="not-mobile"><a href="contact" class="nav-link">Contact</a></li>
+                    <li><a href="terms" class="nav-link">Terms <span class="not-mobile">of Service</span></a></li>
+                    <li><a href="privacy" class="nav-link">Privacy</a></li>
+                </ul>
+                <hr class="footer-line">
+                <span class="footer-strapline">
+                    Planning <br class="mobile-only">made easy
+                </span>
+                <span class="copyright not-mobile">
+                    Copyright 2019 - Workstack<br>
+                    <span class="not-tablet">Workstack Limited &nbsp; Company No. 08781679 &nbsp; VAT No.
+                        GB181077804</span>
+                </span>
+                <span class="social">
+                    <ul class="nav-social">
+                        <li class="not-mobile">Follow us</li>
+                        <li><a href="https://www.facebook.com/pages/Workstack/741291502612738"
+                                class="social-link">Facebook</a></li>
+                        <li><a href="http://www.twitter.com/workstack" class="social-link">Twitter</a></li>
+                        <li><a href="https://plus.google.com/+WorkstackMe" class="social-link">Google +</a></li>
+                    </ul>
+                </span>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/vendor/jquery.1.11.1.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="js/vendor/jquery.loadie.min.js"></script>
+    <script src="js/vendor/jquery.stellar.min.js"></script>
+    <script src="js/vendor/jquery.transit.js"></script>
+    <script src="js/vendor/jquery.backstretch.min.js"></script>
+    <script src="js/vendor/vivus.min.js"></script>
+    <script src="js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="js/vendor/jquery.inview.min.js"></script>
+    <script src="js/vendor/swipe.js"></script>
+    <script src="js/vendor/bootstrap-slider.js"></script>
+    <script src="js/draw-donut-chart.js"></script>
+    <script src="js/ws.js"></script>
+
+</body>
+
+</html>
